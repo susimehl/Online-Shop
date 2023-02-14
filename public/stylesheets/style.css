@@ -11,6 +11,10 @@ a {
 h1 {
   color: 15px;
 }
+
+
+
+
 input {
   padding:10px;
   margin:10px 0; 
@@ -22,3 +26,4 @@ form{
   justify-content: center;
   align-items: center;
 }
+
