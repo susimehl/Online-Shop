@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  
+  background:#aedaec
 }
 
 a {
@@ -9,16 +9,27 @@ a {
 }
 
 h1 {
-  color: 15px;
+  font-size: 25px;
+  color:aliceblue
+ 
 }
 input {
   padding:10px;
   margin:10px 0; 
   border-radius: 10px;
   font-family: monospace;
+  background-color: rgb(253, 254, 255);
 }
 form{
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+button {
+  background-color: rgb(243, 249, 255);
+  border-radius: 10px;
+  margin-left: 30px;
+  font-size: 15px;
 }
