@@ -39,3 +39,5 @@ router.post("/auth/signup", (req, res) => {
 
 
 })
+
+module.exports = router;
