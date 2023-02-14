@@ -9,19 +9,22 @@ require("./db");
 // https://www.npmjs.com/package/express
 const express = require("express");
 
+
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
 const hbs = require("hbs");
 
 const app = express();
 
+hbs.registerPartials(__dirname + "/views/partials")
+
 // ℹ️ This function is getting exported from the config folder. It runs most pieces of middleware
 require("./config")(app);
 
 // default value for title local
 const capitalize = require("./utils/capitalize");
-const projectName = "Online-Shop";
 
+const projectName = "Online-Shop";
 app.locals.appTitle = capitalize(projectName);
 
 
