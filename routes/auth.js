@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const router = require("express").Router()
 const User = require("../models/User.model")
 const bcrypt = require("bcryptjs")
@@ -40,5 +39,3 @@ router.post("/auth/signup", (req, res) => {
 
 
 })
-=======
->>>>>>> main
