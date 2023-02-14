@@ -40,7 +40,7 @@ app.use(
   })
 )
 // 👇 Start handling routes here
-const index = require('./routes/index');
+const index = require('./routes/index.routes');
 app.use("/", index);
 
 const auth = require("./routes/auth")
