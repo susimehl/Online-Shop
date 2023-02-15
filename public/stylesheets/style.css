@@ -2,7 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   /*background:#aedaec*/
-  background:#c5c5c5
+  background:#e3e2e2
 }
 
 a {
@@ -36,6 +36,8 @@ button {
   background-color: rgb(243, 249, 255);
   border-radius: 10px;
   margin-left: 30px;
-  font-size: 15px;
+  font-size: 10px;
+
+ 
 }
 
