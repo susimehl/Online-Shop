@@ -16,7 +16,12 @@ const productSchema = new schema({
     },
     description:String,
     image:String,
-    category:String
+    category:String,
+    rating :{
+        rate : Number,
+        count : Number
+    }
+
 })
 
-module.exports = mongoose.model('product',productSchema)
+module.exports = mongoose.model('fake-products',productSchema)
