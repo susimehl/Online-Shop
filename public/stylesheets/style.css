@@ -40,4 +40,21 @@ button {
 
  
 }
+#first{
+  margin-top: 50px ;
+}
+#zip{
+ margin-top: 5px;
+ padding-bottom: 5px;
+ padding-top: 2px;
+}
+#city{
+  margin-top: 10px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+#address{
+  margin-top: 10px;
+  padding-bottom: 2px; 
 
+}

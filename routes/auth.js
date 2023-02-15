@@ -6,7 +6,7 @@ router.get("/auth/signup", (req, res) => {
   res.render("signup");
 });
 
-router.post("/auth/signup", (req, res) => {
+router.post("/auth/signup", (req, res, next) => {
   const { username, password } = req.body;
 
   if (username === "") {
