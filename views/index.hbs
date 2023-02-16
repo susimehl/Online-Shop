@@ -2,23 +2,66 @@
 {{> navbar this}}
 
 <h2>List of Products</h2>
-{{#each products}}
+{{!-- {{#each products}}
 
-<div>
+{{!-- <div>
  {{!-- <a href="/detail/{{_id}}"><img src={{image}}> </a>  
 <h3> {{title}}</h3>
 <p> {{price}}</p>
 <p>{{description}}</p> --}}
-<div class="card" style="width: 18rem;">
+{{!-- <div class="card" style="width: 18rem;">
   <img src={{image}} class="card-img-top" alt="...">
   <div class="card-body">
     <h6> {{title}}</h6>
     <p> {{price}}</p>
     <p class="card-text">{{description}}</p>
   </div>
+</div>  --}}
+
+
+{{!-- </div>
+{{/each}}  --}}
+
+<div class="row">
+    {{#each products}}
+  <div class="col-sm-4 mb-3 mb-sm-0">
+    <div class="text-size" >
+    <img id="image" src={{image}} class="image">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p id="price">{{price}}</p>
+        <p class="card-text">{{product.description}}</p>  
+      </div>
+    </div>
+  </div>
+  {{!-- <div class="col-sm-4">
+    <div> 
+     <img id="image" src={{product.image}} class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+         <p>{{price}}</p>
+        <p class="card-text">{{product.description}}</p>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4">
+    <div> 
+     <img id="image" src={{product.image}} class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+         <p>{{price}}</p>
+        <p class="card-text">{{product.description}}</p>
+      </div>
+    </div>
+  </div> --}}
+  {{/each}}
 </div>
 
 
-</div>
-{{/each}}
+
+
+
+
+
+
 
