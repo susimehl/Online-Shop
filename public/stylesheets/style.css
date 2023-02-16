@@ -1,7 +1,10 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  
+
+  /* background: linear-gradient(to top, #c9c9ff 50%, #9090fa 90%); */
+
+
 }
 
 a {
@@ -9,7 +12,9 @@ a {
 }
 
 h1 {
-  color: 15px;
+  font-size: 25px;
+  color:aliceblue
+ 
 }
 
 
@@ -20,10 +25,50 @@ input {
   margin:10px 0; 
   border-radius: 10px;
   font-family: monospace;
+  background-color: rgb(253, 254, 255);
 }
 form{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
+
+button {
+  background-color: rgb(243, 249, 255);
+  border-radius: 10px;
+  margin-left: 30px;
+  font-size: 10px;
+
+ 
+}
+
+
+/* login.hbs styles */
+
+.container{
+    margin: 50px auto;
+}
+.panel-heading{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#forgot{
+    min-width: 100px;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+/* .form-inline label{
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer;
+} */
+.btn.btn-primary{
+    margin-top: 20px;
+    border-radius: 17px;
+}
+
+
+
 

@@ -1,3 +1,15 @@
+
 {{> navbar }}
 
+<h2>List of Products</h2>
+{{#each products}}
+
+<div>
+ <a href="/detail/{{_id}}"><img src={{image}}> </a>  
+<h3> {{title}}</h3>
+<p> {{price}}</p>
+<p>{{description}}</p>
+
+</div>
+{{/each}}
 
