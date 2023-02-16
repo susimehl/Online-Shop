@@ -11,83 +11,11 @@
 
 {{#if message}}
 	<h3 class="error">{{message}}</h3>
-{{/if}} --}}
 
-{{! <div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-  <label for="floatingInput">Email address</label>
-</div>
-<div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-  <label for="floatingPassword">Password</label>
-</div> }}
+{{else}}
+   <h2>Welcome, {{ user.username }}!</h2>
+{{/if}}
 
-{{!-- <h1>Login</h1>
-<form action="/auth/login" method="POST">
-  <div class="form-floating mb-2">
-    <input
-      type="email"
-      class="form-control"
-      id="floatingInput"
-      placeholder="name@example.com"
-    />
-    <label for="floatingInput">Email address</label>
-  </div>
-  <br />
-  <div class="form-floating">
-    <input
-      type="password"
-      class="form-control"
-      id="floatingPassword"
-      placeholder="Password"
-    />
-    <label for="floatingPassword">Password</label>
-  </div>
-  <br />
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form> --}}
-
-
-{{!-- <div class="container">
-        <div class="row">
-            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
-                <div class="panel border bg-white">
-                    <div class="panel-heading">
-                        <h3 class="pt-3 font-weight-bold">Login</h3>
-                    </div>
-                    <div class="panel-body p-3">
-                        <form action="login_script.php" method="POST">
-                            <div class="form-group py-2">
-                                <div class="input-field">
-                                    <span class="far fa-user p-2"></span>
-                                    <input type="text" placeholder="Username or Email" required>
-                                </div>
-                            </div>
-                            <div class="form-group py-1 pb-2">
-                                <div class="input-field">
-                                    <span class="fas fa-lock px-2"></span>
-                                    <input type="password" placeholder="Enter your Password" required>
-                                    <button class="btn bg-white text-muted">
-                                        <span class="far fa-eye-slash"></span>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="form-inline">
-                                <input type="checkbox" name="remember" id="remember">
-                                <label for="remember" class="text-muted">Remember me</label>
-                                <a href="#" id="forgot" class="font-weight-bold">Forgot password?</a>
-                            </div>
-                            <div class="btn btn-primary btn-block mt-3">Login</div>
-                            <div class="text-center pt-4 text-muted">Don't have an account? <a href="#">Sign up</a>
-                            </div>
-                        </form>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
 
     <!DOCTYPE html>
 <html>

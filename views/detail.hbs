@@ -1,5 +1,6 @@
 {{!-- <h2>{{product.title}}</h2> --}}
 
+/*
 {{!-- <p><img src={{product.image}}></p>
 <P>{{product.price}}</P>
 
@@ -31,3 +32,15 @@
   </div>
   {{each}}
 </div>
+*/
+
+<p><img src={{product.image}}></p>
+{{product.price}}
+
+<p>{{product.description}}</p>
+<form action="/addtocart/{{product._id}}" method="POST">
+    <input type="hidden" >
+    <button type="submit" class="btn btn-outline-success">Add to basket</button>
+
+</form>
+
