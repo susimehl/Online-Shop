@@ -8,8 +8,8 @@ body {
 
   /*background:#aedaec*/
   /*background:#c4c2c2*/
-  background: linear-gradient(rgba(107, 52, 245, 0.818) 1% ,rgba(90, 44, 208, 0.29) 5%, rgba(255, 192, 203, 0.29) 39% , rgba(255, 158, 12, 0.697) 50%);
-
+  /*background: linear-gradient(rgba(107, 52, 245, 0.818) 1% ,rgba(90, 44, 208, 0.29) 5%, rgba(255, 192, 203, 0.29) 39% , rgba(255, 158, 12, 0.564) 90%, rgba(255, 44, 208, 0.29) )*/
+background: linear-gradient(rgba(107, 52, 245, 0.818) 1% ,rgba(255, 255, 255, 0.29) 5%, rgba(255, 255, 255, 0.29) 39% , rgba(255, 158, 12, 0.564) 90%, rgba(255, 44, 208, 0.29) )
 }
 
 a {
@@ -21,10 +21,16 @@ h1 {
   color:aliceblue
  
 }
+
 h2{
-  
+  color:rgb(86, 99, 124);
 }
 
+.image{
+ width: 230px;
+ height: 250px;
+ 
+}
 
 
 input {
@@ -93,7 +99,16 @@ button {
     margin-top: 20px;
     border-radius: 17px;
 }
+.card-title{
+  font-size: 15px;
+  color:rgb(93, 107, 134);
 
-
-
+  
+}
+#price{
+  color:rgb(93, 107, 134)
+}
+.row{
+  font-size: 10px;
+}
 

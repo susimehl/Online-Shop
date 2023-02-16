@@ -21,7 +21,7 @@
 
 
 <h1>Create your Account</h1>
-<form action="/auth/signup" method="POST" class="row g-3"></form>
+<form action="/auth/signup" method="POST" class="row g-3">
   <div id="first" class="col-md-6">
     <label for="inputFirstname4" class="form-label">Firstname</label>
     <input type="text" class="form-control" id="inputFirstname4">
@@ -31,16 +31,16 @@
     <input type="text" class="form-control" id="inputLastname4">
   </div>
   <div class="col-md-6">
-    <label for="inputUsername" class="form-label">Username</label>
-    <input type="text" class="form-control" id="inputUsername"> 
+    <label for="username" class="form-label">Username</label>
+    <input type="text" name="username" class="form-control" id="inputUsername"> 
   </div>
   <div class="col-md-6">
-    <label for="inputEmail" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail"> 
+    <label for="email" class="form-label">Email</label>
+    <input type="text" name="email" class="form-control" id="inputEmail"> 
   </div>
   <div class="col-md-6">
-    <label for="inputPassword" class="form-label">Password</label>
-    <input type="password" class="form-control" id="inputPassword">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" name="password" class="form-control" id="inputPassword">
   </div>
   <div class="col-md-6">
     <label id="address" for="inputAddress1" class="form-label">Address</label>
@@ -67,10 +67,6 @@
     <button type="submit" class="btn btn-primary">Sign in</button>
   </div>
 </form>
-
-
-
-
 
 {{#if message}}
 	<h3 class="error">{{message}}</h3>
