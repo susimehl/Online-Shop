@@ -2,8 +2,13 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 
+
   /* background: linear-gradient(to top, #c9c9ff 50%, #9090fa 90%); */
 
+
+  /*background:#aedaec*/
+  /*background:#c4c2c2*/
+  background: linear-gradient(rgba(107, 52, 245, 0.818) 1% ,rgba(90, 44, 208, 0.29) 5%, rgba(255, 192, 203, 0.29) 39% , rgba(255, 158, 12, 0.697) 50%);
 
 }
 
@@ -16,7 +21,9 @@ h1 {
   color:aliceblue
  
 }
-
+h2{
+  
+}
 
 
 
@@ -41,6 +48,24 @@ button {
   font-size: 10px;
 
  
+}
+#first{
+  margin-top: 50px ;
+}
+#zip{
+ margin-top: 5px;
+ padding-bottom: 5px;
+ padding-top: 2px;
+}
+#city{
+  margin-top: 10px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+#address{
+  margin-top: 10px;
+  padding-bottom: 2px; 
+
 }
 
 
