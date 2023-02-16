@@ -5,10 +5,19 @@
 {{#each products}}
 
 <div>
- <a href="/detail/{{_id}}"><img src={{image}}> </a>  
+ {{!-- <a href="/detail/{{_id}}"><img src={{image}}> </a>  
 <h3> {{title}}</h3>
 <p> {{price}}</p>
-<p>{{description}}</p>
+<p>{{description}}</p> --}}
+<div class="card" style="width: 18rem;">
+  <img src={{image}} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h6> {{title}}</h6>
+    <p> {{price}}</p>
+    <p class="card-text">{{description}}</p>
+  </div>
+</div>
+
 
 </div>
 {{/each}}
