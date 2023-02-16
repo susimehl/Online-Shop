@@ -21,10 +21,12 @@ router.post("/addtocart/:id", isLoggedIn , (req, res, next) =>{
     })
 })
 
+
 router.get("/cart/:id", ((req, res) =>{
    
     res.render("cart")
 })
+)
 
 
 
