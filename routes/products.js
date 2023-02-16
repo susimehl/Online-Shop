@@ -1,12 +1,12 @@
 const router = require("express").Router();
 const Product = require("../models/Product.model")
+const User = require("../models/User.model")
 
 router.get("/", (req, res, next) => {
-
+    let user = req.session.user 
     Product.find()
     .then((productsDB) =>{
-        console.log(productsDB)
-        res.render("index", { products : productsDB })
+        res.render("index", { products : productsDB, user: user })
     }).catch((err) => next(err))
 })
 
@@ -19,5 +19,8 @@ router.get("/detail/:id", (req, res) => {
     })
     .catch(err => next(err))
 })
+
+
+
 
 module.exports = router
