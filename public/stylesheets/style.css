@@ -2,7 +2,8 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   /*background:#aedaec*/
-  background:#e3e2e2
+  /*background:#c4c2c2*/
+  background: linear-gradient(rgba(107, 52, 245, 0.818) 1% ,rgba(90, 44, 208, 0.29) 5%, rgba(255, 192, 203, 0.29) 39% , rgba(255, 158, 12, 0.697) 50%);
 }
 
 a {
@@ -14,7 +15,9 @@ h1 {
   color:aliceblue
  
 }
-
+h2{
+  
+}
 
 
 
@@ -58,3 +61,4 @@ button {
   padding-bottom: 2px; 
 
 }
+
