@@ -2,7 +2,6 @@ const mongoose = require('mongoose')
 const schema = mongoose.Schema
 
 const userSchema = new schema({
-    
     email:{
         type:String,
         required:true
@@ -15,13 +14,13 @@ const userSchema = new schema({
         type:String,
         required:true
     },
+
    firstname:{
             type:String,
         },
  lastname:{
             type:String,
-        }
-    ,
+        },
     address:{
         city:String,
         street:String,
@@ -32,7 +31,6 @@ const userSchema = new schema({
             long:String
         }
     },
-
 })
 
 module.exports = mongoose.model('user',userSchema)

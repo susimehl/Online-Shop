@@ -43,7 +43,6 @@ app.use(
   })
 )
 // 👇 Start handling routes here
-
 const auth = require("./routes/auth")
 app.use("/", auth);
 

@@ -1,8 +1,15 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
+  /* background: linear-gradient(to top, #c9c9ff 50%, #9090fa 90%); */
+
+
   /*background:#aedaec*/
-  background:#c5c5c5
+  /*background:#c4c2c2*/
+  /*background: linear-gradient(rgba(107, 52, 245, 0.818) 1% ,rgba(90, 44, 208, 0.29) 5%, rgba(255, 192, 203, 0.29) 39% , rgba(255, 158, 12, 0.564) 90%, rgba(255, 44, 208, 0.29) )*/
+background: linear-gradient(rgba(107, 52, 245, 0.818) 1% ,rgba(255, 255, 255, 0.29) 5%, rgba(255, 255, 255, 0.29) 39% , rgba(255, 158, 12, 0.564) 90%, rgba(255, 44, 208, 0.29) )
 }
 
 a {
@@ -15,7 +22,15 @@ h1 {
  
 }
 
+h2{
+  color:rgb(86, 99, 124);
+}
 
+.image{
+ width: 230px;
+ height: 250px;
+ 
+}
 
 
 input {
@@ -36,6 +51,64 @@ button {
   background-color: rgb(243, 249, 255);
   border-radius: 10px;
   margin-left: 30px;
+  font-size: 10px;
+
+ 
+}
+#first{
+  margin-top: 50px ;
+}
+#zip{
+ margin-top: 5px;
+ padding-bottom: 5px;
+ padding-top: 2px;
+}
+#city{
+  margin-top: 10px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+#address{
+  margin-top: 10px;
+  padding-bottom: 2px; 
+
+}
+
+
+/* login.hbs styles */
+
+.container{
+    margin: 50px auto;
+}
+.panel-heading{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#forgot{
+    min-width: 100px;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+/* .form-inline label{
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer;
+} */
+.btn.btn-primary{
+    margin-top: 20px;
+    border-radius: 17px;
+}
+.card-title{
   font-size: 15px;
+  color:rgb(93, 107, 134);
+
+  
+}
+#price{
+  color:rgb(93, 107, 134)
+}
+.row{
+  font-size: 10px;
 }
 
