@@ -8,7 +8,6 @@ router.post("/addtocart/:id", isLoggedIn , (req, res, next) =>{
     console.log('here')
     const {id} = req.params
     const userId = req.session.user._id
-    
 
     Product.findById(id)
     .then((product)=> {
@@ -22,12 +21,10 @@ router.post("/addtocart/:id", isLoggedIn , (req, res, next) =>{
     })
 })
 
-// router.get("/cart/:id", ((req, res) =>{
+router.get("/cart/:id", ((req, res) =>{
    
-//     res.render("cart")
-// })
-// )
-
+    res.render("cart")
+})
 
 
 

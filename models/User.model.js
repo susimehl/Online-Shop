@@ -14,10 +14,11 @@ const userSchema = new schema({
         type:String,
         required:true
     },
-     firstname:{
+
+   firstname:{
             type:String,
         },
-     lastname:{
+ lastname:{
             type:String,
         },
     address:{
@@ -30,7 +31,6 @@ const userSchema = new schema({
             long:String
         }
     },
-   
 })
 
 module.exports = mongoose.model('user',userSchema)
