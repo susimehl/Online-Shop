@@ -4,6 +4,20 @@ const Product = require("../models/Product.model")
 const {isLoggedIn}= require("../middleware/route-guard")
 
 
+
+
+
+router.get("/cart",isLoggedIn, ((req, res) =>{
+   let id = req.session.user._id
+   Cart.findOne({userId: id})
+   .then(cartFromUser=> {
+       res.render("cart", {cartItems: cartFromUser.products})
+   })
+})
+)
+
+
+
 router.post("/addtocart/:id", isLoggedIn , (req, res, next) =>{
     console.log('here')
     const {id} = req.params
@@ -21,10 +35,7 @@ router.post("/addtocart/:id", isLoggedIn , (req, res, next) =>{
     })
 })
 
-router.get("/cart/:id", ((req, res) =>{
-   
-    res.render("cart")
-})
+
 
 
 

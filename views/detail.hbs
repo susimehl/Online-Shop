@@ -1,5 +1,7 @@
-<h2>{{product.title}}</h2>
+{{> navbar}}
 
+<h2>{{product.title}}</h2>
+<a href="/cart">🛒</a>
 <p><img src={{product.image}}></p>
 {{product.price}}
 
@@ -10,3 +12,4 @@
 
 </form>
 
+{{> footer}}
