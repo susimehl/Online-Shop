@@ -1,13 +1,14 @@
 const router = require("express").Router();
 const User = require("../models/User.model");
 const bcrypt = require("bcryptjs");
+const Cart = require("../models/Cart.model")
 
 router.get("/auth/signup", (req, res) => {
   res.render("signup");
 });
 
-router.post("/auth/signup", (req, res) => {
-  const { username, password } = req.body;
+router.post("/auth/signup", (req, res, next) => {
+  const { username, password, email } = req.body;
 
   if (username === "") {
     res.render("signup", { message: "Username cannot be empty" });
@@ -21,10 +22,12 @@ router.post("/auth/signup", (req, res) => {
       const salt = bcrypt.genSaltSync();
       const hash = bcrypt.hashSync(password, salt);
 
-      User.create({ username: username, password: hash })
+      User.create({ username: username, password: hash, email:email})
         .then((createdUser) => {
-          console.log(createdUser);
-          res.redirect("/auth/login");
+          Cart.create({userId: createdUser._id})
+          .then(()=>{
+            res.redirect("/auth/login");
+          })
         })
         .catch((err) => {
           next(err);
@@ -40,21 +43,18 @@ router.get("/auth/login", (req, res, next) => {
 router.post("/auth/login", (req, res, next) => {
   const { username, password } = req.body;
 
-  // Find user in database by username
   User.findOne({ username }).then((userFromDB) => {
     if (userFromDB === null) {
-      // User not found in database => Show login form
+     
       res.render("login", { message: "Wrong credentials" });
       return;
     }
 
-    // User found in database
-    // Check if password from input form matches hashed password from database
+    
     if (bcrypt.compareSync(password, userFromDB.password)) {
-      // Password is correct => Login user
-      // req.session is an object provided by "express-session"
+      
       req.session.user = userFromDB;
-      res.redirect("/profile");
+      res.redirect("/");
     } else {
       res.render("login", { message: "Wrong credentials" });
       return;
@@ -63,7 +63,7 @@ router.post("/auth/login", (req, res, next) => {
 });
 
 router.get("/auth/logout", (req, res, next) => {
-    // Logout user
+ 
     req.session.destroy()
     res.redirect("/")
 })
