@@ -1,8 +1,10 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /*background:#aedaec*/
-  background:#e3e2e2
+
+  /* background: linear-gradient(to top, #c9c9ff 50%, #9090fa 90%); */
+
+
 }
 
 a {
@@ -40,4 +42,33 @@ button {
 
  
 }
+
+
+/* login.hbs styles */
+
+.container{
+    margin: 50px auto;
+}
+.panel-heading{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#forgot{
+    min-width: 100px;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+/* .form-inline label{
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer;
+} */
+.btn.btn-primary{
+    margin-top: 20px;
+    border-radius: 17px;
+}
+
+
+
 
