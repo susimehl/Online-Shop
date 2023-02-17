@@ -51,12 +51,25 @@ h2{
 
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
+#div-form{
+  display: contents;
+  justify-content: center;
+}
 
-
-
+#form-info{
+  display: flex;
+  flex-direction: column;
+  border: black solid;
+  border-width: 1px;
+  border-radius: 20px;
+  height: 400px;
+  width: 300;
+  font-size: 14px; 
+}
 
 
 
