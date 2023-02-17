@@ -1,7 +1,8 @@
 {{!-- <h2>Cart:</h2> --}}
 
 {{!-- <p>{{product.title}}</p> --}}
-
+{{> header}}
+{{> navbar}}
 <h1>Your Cart</h1>
 
 {{#if cartItems}}
@@ -18,14 +19,20 @@
     <tbody>
       {{#each cartItems}}
         <tr>
-          <td>{{this.product.title}}</td>
+          <td>{{this.title}}</td>
           <td>${{this.price}}</td>
           <td>
             <input type="number" min="1" value="{{this.quantity}}" data-item="{{this._id}}">
           </td>
           <td>{{this.price}}{{this.quantity}}</td>
           <td>
-            <button data-item="{{this._id}}">Remove</button>
+            {{!-- <button data-item="{{this._id}}">Remove</button> --}}
+
+            <form action="/cart/{{this.productId}}" method="POST">
+              <input type="hidden">
+              <button type="submit" class="btn btn-outline-danger">Remove</button>
+            
+            </form>
           </td>
         </tr>
       {{/each}}
@@ -39,3 +46,4 @@
   <p>Your cart is empty.</p>
 {{/if}}
 
+{{> footer}}
