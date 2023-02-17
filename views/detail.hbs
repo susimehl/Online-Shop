@@ -1,16 +1,29 @@
+
 {{> header}}
 {{> navbar}}
 
 <h2>{{product.title}}</h2>
 
-<p><img src={{product.image}}></p>
-{{product.price}}
 
-<p>{{product.description}}</p>
-<form action="/addtocart/{{product._id}}" method="POST">
+
+<div class="container text-center">
+  <div class="row">
+    <div id="detail" class="col">
+        
+        <p><img src={{product.image}}></p>
+      
+    </div>
+    <div class="col">
+        <h2>{{product.title}}</h2>
+         {{product.price}}
+      <p class="description" >{{product.description}}</p>
+       <form action="/addtocart/{{product._id}}" method="POST">
     <input type="hidden" >
-    <button type="submit" class="btn btn-outline-success">Add to basket</button>
+    <button  type="submit" class="btn btn-outline-success">Add to basket</button>
+    </div>
+  </div>
 
-</form>
+  
 
 {{> footer}}
+

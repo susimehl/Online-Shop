@@ -41,7 +41,7 @@ a {
 
 h1 {
   font-size: 25px;
-  color:aliceblue
+  color:rgb(166, 152, 189)
  
 }
 
@@ -145,6 +145,31 @@ button {
 .row{
   font-size: 10px;
 }
+#detail img{
+  width:330px;
+  height:350px;
+}
+#detail h2{
+  font-size: 20px;
+  
+}
+.description{
+  font-size: 20px;
+  color:rgb(93, 107, 134);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+
+  
+}
+#detail{
+  color:rgb(93, 107, 134)
+}
+.col{
+  font-size:20px ;
+  padding-top: 50px;
+}
+
 
 .icon { 
   height: 20px;

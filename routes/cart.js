@@ -3,10 +3,6 @@ const Cart = require("../models/Cart.model")
 const Product = require("../models/Product.model")
 const {isLoggedIn}= require("../middleware/route-guard")
 
-
-
-
-
 router.get("/cart",isLoggedIn, ((req, res, next) =>{
    let id = req.session.user._id
    Cart.findOne({userId: id})
@@ -27,8 +23,6 @@ router.get("/cart",isLoggedIn, ((req, res, next) =>{
    .catch(err => next(err)) 
 })
 )
-
-
 
 router.post("/addtocart/:id", isLoggedIn , (req, res, next) =>{
     console.log('here')
@@ -70,5 +64,10 @@ router.post("/cart/:id", isLoggedIn, ((req, res, next) => {
 )
 
 
+router.get("/cart/:id", ((req, res) =>{
+   
+    res.render("cart")
+})
+)
 
 module.exports = router
