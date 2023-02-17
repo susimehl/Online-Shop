@@ -1,3 +1,49 @@
-<h2>Cart:</h2>
+{{!-- <h2>Cart:</h2> --}}
 
-<p>{{product.title}}</p>
+{{!-- <p>{{product.title}}</p> --}}
+{{> header}}
+{{> navbar}}
+<h1>Your Cart</h1>
+
+{{#if cartItems}}
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each cartItems}}
+        <tr>
+          <td>{{this.title}}</td>
+          <td>${{this.price}}</td>
+          <td>
+            <input type="number" min="1" value="{{this.quantity}}" data-item="{{this._id}}">
+          </td>
+          <td>{{this.price}}{{this.quantity}}</td>
+          <td>
+            {{!-- <button data-item="{{this._id}}">Remove</button> --}}
+
+            <form action="/cart/{{this.productId}}" method="POST">
+              <input type="hidden">
+              <button type="submit" class="btn btn-outline-danger">Remove</button>
+            
+            </form>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <p>Total: # </p>
+
+  <button id="checkout">Checkout</button>
+{{else}}
+  <p>Your cart is empty.</p>
+{{/if}}
+
+{{> footer}}
