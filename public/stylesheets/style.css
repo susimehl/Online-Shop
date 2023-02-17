@@ -136,4 +136,6 @@ button {
   padding-top: 50px;
 }
 
-
+.navbar-brand{
+  color: rgb(93, 107, 134);
+}
