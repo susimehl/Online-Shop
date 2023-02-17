@@ -195,3 +195,13 @@ button {
 #footer { 
   background-color: rgba(255, 111, 0, 0.663);
 }
+
+#div-form {
+  margin: 10vw;
+  display: flex;
+  justify-content: canter;
+}
+
+#signup-h1 {
+  margin-top: 5vw;
+}

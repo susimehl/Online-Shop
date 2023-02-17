@@ -1,3 +1,6 @@
+{{>header}}
+{{>navbar}}
+
 <h1>Login</h1>
 <form action="/auth/login" method="POST">
     <label for="username">Username: </label>
@@ -16,3 +19,5 @@
 {{else}}
 <h2>Welcome {{ user.username }}!</h2>
 {{/if}}
+
+{{>footer}}
