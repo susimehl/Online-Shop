@@ -25,7 +25,7 @@ router.get("/cart/:id", ((req, res) =>{
    
     res.render("cart")
 })
-
+)
 
 
 module.exports = router
