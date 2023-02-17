@@ -1,18 +1,24 @@
+{{> header}}
+
 {{> navbar this}}
 
-<h2>List of Products</h2>
+<h2>Welcome {{user.username}}!</h2>
 
+
+
+<div class="container">
 <div class="row">
     {{#each products}}
   <div class="col-sm-4 mb-3 mb-sm-0">
     <div class="text-size" >
     <a href="/detail/{{_id}}"><img id="image" src={{image}} class="image"> </a>
-      <div class="card-body">
-        <h5 class="card-title">{{title}}</h5>
-        <p id="price">{{price}}</p>
-        <p class="card-text pb-2 pt-2">{{product.description}}</p>  
+      <div class="card-body" >
+        <h5 class="card-title ">{{title}}</h5>
+        <p id="price">{{price}}$</p>
       </div>
     </div>
   </div>
   {{/each}}
 </div>
+</div>
+{{> footer}}

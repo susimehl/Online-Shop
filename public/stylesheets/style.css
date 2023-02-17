@@ -1,6 +1,11 @@
+
+
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif, ;
+  /* margin-left: 50px;
+  margin-right: 50px; */
 
 
   /* background: linear-gradient(to top, #c9c9ff 50%, #9090fa 90%); */
@@ -9,8 +14,26 @@ body {
   /*background:#aedaec*/
   /*background:#c4c2c2*/
   /*background: linear-gradient(rgba(107, 52, 245, 0.818) 1% ,rgba(90, 44, 208, 0.29) 5%, rgba(255, 192, 203, 0.29) 39% , rgba(255, 158, 12, 0.564) 90%, rgba(255, 44, 208, 0.29) )*/
-background: linear-gradient(rgba(107, 52, 245, 0.818) 1% ,rgba(255, 255, 255, 0.29) 5%, rgba(255, 255, 255, 0.29) 39% , rgba(255, 158, 12, 0.564) 90%, rgba(255, 44, 208, 0.29) )
+background: linear-gradient(rgba(107, 52, 245, 0.818) 0.5% ,rgba(255, 255, 255, 0.29) 5%, rgba(255, 255, 255, 0.29)90% ,rgb(224, 106, 15))
+/* background: linear-gradient(rgba(107, 52, 245, 0.818) 1% ,rgba(255, 255, 255, 0.29) 5%, rgba(255, 255, 255, 0.29) 39% , rgba(255, 158, 12, 0.564) 90%, rgba(255, 44, 208, 0.29) ) */
 }
+
+
+.header{
+  width: 100 vw;
+  height: 80 px;
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  margin-top: 0;
+  position: top;
+  background-color: rgba(107, 52, 245, 0.818);
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #fff;
+}
+
+
 
 a {
   color: #00b7ff;
@@ -26,9 +49,20 @@ h2{
   color:rgb(86, 99, 124);
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
 .image{
  width: 230px;
- height: 250px;
+ height: 280px;
  
 }
 
@@ -137,3 +171,14 @@ button {
 }
 
 
+.icon { 
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: right;
+
+}
+
+#footer { 
+  background-color: rgba(255, 111, 0, 0.663);
+}
