@@ -3,7 +3,6 @@ const Cart = require("../models/Cart.model")
 const Product = require("../models/Product.model")
 const {isLoggedIn}= require("../middleware/route-guard")
 
-
 router.post("/addtocart/:id", isLoggedIn , (req, res, next) =>{
     console.log('here')
     const {id} = req.params
@@ -25,7 +24,6 @@ router.get("/cart/:id", ((req, res) =>{
    
     res.render("cart")
 })
-
-
+)
 
 module.exports = router
